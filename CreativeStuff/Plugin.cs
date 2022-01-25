@@ -1,6 +1,5 @@
 ﻿using BepInEx;
 using HarmonyLib;
-using System.Threading.Tasks;
 
 namespace TestMod
 {
