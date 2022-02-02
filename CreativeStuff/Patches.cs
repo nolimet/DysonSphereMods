@@ -17,12 +17,12 @@ namespace TestMod
 
             void OutputForOutput(int output)
             {
-                if (output != 0)
+                if (output > 0)
                 {
                     var outputPath = __instance.GetCargoPath(__instance.beltPool[output].segPathId);
                     if (outputPath != null && outputPath.TestBlankAtHead() == 0)
                     {
-                        outputPath.TryInsertItemAtHead(filter, 1, 1);
+                        outputPath.TryInsertItemAtHead(filter, TestMod.ouputStacksize.Value, 3);
                     }
                 }
             }
