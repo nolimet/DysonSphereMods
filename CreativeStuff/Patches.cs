@@ -22,7 +22,7 @@ namespace TestMod
                     var outputPath = __instance.GetCargoPath(__instance.beltPool[output].segPathId);
                     if (outputPath != null && outputPath.TestBlankAtHead() == 0)
                     {
-                        outputPath.TryInsertItemAtHead(filter, TestMod.outputStacksize.Value, TestMod.sprayCount);
+                        outputPath.TryInsertItemAtHead(filter, CreativeStuff.outputStacksize.Value, CreativeStuff.sprayCount);
                     }
                 }
             }

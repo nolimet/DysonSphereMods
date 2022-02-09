@@ -7,11 +7,11 @@ namespace TestMod
 {
     [BepInPlugin(PLUGIN_GUID, PLUGIN_NAME, PLUGIN_VERSION)]
     [BepInProcess("DSPGAME.exe")]
-    public class TestMod : BaseUnityPlugin
+    public class CreativeStuff : BaseUnityPlugin
     {
         public const string PLUGIN_GUID = "nl.jessestam.creativeStuff";
         public const string PLUGIN_NAME = "creativeStuff";
-        public const string PLUGIN_VERSION = "1.0.3.0";
+        public const string PLUGIN_VERSION = "1.0.4.0";
 
         public static ConfigEntry<byte> outputStacksize;
         public static byte sprayCount;
@@ -25,7 +25,7 @@ namespace TestMod
             sprayLevel = Config.Bind<byte>("General", "SprayLevel", 3, "How much spray has been applied to the output? (Range 0-3) above has not been tested");
 
             sprayLevel.Value = (byte)Mathf.Clamp(sprayLevel.Value, 0, 3);
-            outputStacksize.Value = (byte)Mathf.Clamp(outputStacksize.Value, 0, 6);
+            outputStacksize.Value = (byte)Mathf.Clamp(outputStacksize.Value, 0, 8);
             Config.Save();
 
             sprayCount = (byte)(sprayLevel.Value * outputStacksize.Value);
