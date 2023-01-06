@@ -1,6 +1,6 @@
 {
 	"name": "Creative_Provider",
-	"version_number": "1.0.5",
+	"version_number": "1.0.6",
 	"description": "Create an infinite amount with Providers",
 	"website_url": "https://github.com/nolimet/DysonSphereMods",
 	"dependencies": ["xiaoye97-BepInEx-5.4.17"]

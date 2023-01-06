@@ -9,6 +9,8 @@ It allows you to create a infinite amount of crap from any splitter.
 5. Profit! You got all the stuffs
 
 # Changes
+## 1.0.6
+ - Fixed implemention so it works agains again since they changed everything on the game side
 ## 1.0.1
  - Changed how many items you get per output. Increased it to stacks of 4 with enhancement lvl 3
 

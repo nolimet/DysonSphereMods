@@ -1,7 +1,6 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
 using HarmonyLib;
-using System;
 using UnityEngine;
 
 namespace CreativeStuff
@@ -12,7 +11,7 @@ namespace CreativeStuff
     {
         public const string PLUGIN_GUID = "nl.jessestam.creativeStuff";
         public const string PLUGIN_NAME = "creativeStuff";
-        public const string PLUGIN_VERSION = "1.0.5.0";
+        public const string PLUGIN_VERSION = "1.0.6.0";
 
         public static ConfigEntry<byte> outputStacksize;
         public static ConfigEntry<byte> sprayLevel;
