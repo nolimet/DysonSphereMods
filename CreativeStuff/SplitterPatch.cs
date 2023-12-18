@@ -1,8 +1,7 @@
 ﻿using HarmonyLib;
-
 namespace CreativeStuff
 {
-    public static class Patches
+    public static class SplitterPatch
     {
         [HarmonyPrefix]
         [HarmonyPatch(typeof(CargoTraffic), "UpdateSplitter")]
@@ -29,7 +28,7 @@ namespace CreativeStuff
                 var outputPath = __instance.GetCargoPath(__instance.beltPool[output].segPathId);
                 if (outputPath != null && outputPath.TestBlankAtHead() == 0)
                 {
-                    outputPath.TryInsertItemAtHead(filter, CreativeStuff.outputStacksize.Value, CreativeStuff.sprayLevel.Value);
+                    outputPath.TryInsertItemAtHead(filter, CreativeStuff.SplitterConfig.OutputStackSize.Value, CreativeStuff.SplitterConfig.SprayLevel.Value);
                 }
             }
         }
