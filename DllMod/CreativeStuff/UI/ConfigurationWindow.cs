@@ -7,7 +7,7 @@ public class ConfigurationWindow : MonoBehaviour
 {
     public static ConfigurationWindow Create()
     {
-        
+        return default;
     }
     
     void Awake()
