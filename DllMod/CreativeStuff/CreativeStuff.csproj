@@ -6,7 +6,7 @@
         <Description>A mod to create an infite amount of stuff</Description>
         <Version>1.0.7</Version>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <LangVersion>latest</LangVersion>
+        <LangVersion>default</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
